@@ -74,6 +74,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gcl='git-commit-lost'
   alias gcy='git cherry -v --abbrev'
   alias gcY='git cherry -v'
+  alias gcpx='git cherry-pick -x'
 
   # Conflict (C)
   alias gCl='git --no-pager diff --name-only --diff-filter=U'
@@ -173,9 +174,9 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias ggw='git grep --word-regexp'
 
   # Index (i)
-  alias gia='git add -v'
-  alias giA='git add -v --patch'
-  alias giu='git add -v --update'
+  alias gia='git add --verbose'
+  alias giA='git add --verbose --patch'
+  alias giu='git add --verbose --update'
   alias gid='git diff --no-ext-diff --cached'
   alias giD='git diff --no-ext-diff --cached --word-diff'
   alias gii='git update-index --assume-unchanged'
@@ -184,6 +185,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias giR='git reset --patch'
   alias gix='git rm -r --cached'
   alias giX='git rm -rf --cached'
+  alias giw='git diff -U0 -w --no-color "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
 
   # Log (l)
   alias gl='git log --topo-order --pretty=format:"${_git_log_medium_format}"'
@@ -194,6 +196,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
   alias glc='git shortlog --summary --numbered'
   alias glS='git log --show-signature'
+  alias glp='git log --patch'
 
   # Merge (m)
   alias gm='git merge'
@@ -201,6 +204,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gmF='git merge --no-ff'
   alias gma='git merge --abort'
   alias gmt='git mergetool'
+  alias gms='git merge --squash'
 
   # Push (p)
   alias gp='git push && git fat push'
@@ -261,6 +265,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gtl='git tag -l'
   alias gts='git tag -s'
   alias gtv='git verify-tag'
+  alias gts='git tag --sort=objecttype --sort=-creatordate | git show --date=local --pretty="format:%C(auto)%h%C(green)%d %C(blue)%an %C(auto)%s %x1b[2m%ad%x1b[0m%Creset" -s --stdin'
 
   # Working Copy (w)
   alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
