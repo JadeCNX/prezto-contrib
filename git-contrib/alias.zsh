@@ -247,6 +247,8 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gss='git stash save --include-untracked'
   alias gsS='git stash save --patch --no-keep-index'
   alias gsw='git stash save --include-untracked --keep-index'
+  alias gsh='git stash push'
+  alias gshm='git stash push -m'
 
   # Submodule (S)
   alias gS='git submodule'
