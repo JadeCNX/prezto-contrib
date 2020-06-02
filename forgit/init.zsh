@@ -4,8 +4,8 @@ forgit_diff=gzd
 forgit_add=gza
 forgit_reset_head=gzr
 forgit_ignore=gzi
-forgit_restore=gzf
-forgit_clean=gzc
+forgit_restore=gzc
+forgit_clean=gzx
 forgit_stash_show=gzs
 
 # Enter	Confirm
