@@ -19,6 +19,6 @@
 [submodule "fzy/external"]
 	path = fzy/external
 	url = https://github.com/aperezdc/zsh-fzy.git
-[submodule "forgit"]
-	path = forgit
+[submodule "forgit/external"]
+	path = forgit/external
 	url = https://github.com/wfxr/forgit.git
