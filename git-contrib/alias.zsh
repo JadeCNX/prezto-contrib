@@ -65,6 +65,8 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gcP='git cherry-pick --no-commit'
   alias gcp='git cherry-pick'
   alias gcpx='git cherry-pick -x'
+  alias gcpa='git cherry-pick --abort'
+  alias gcpc='git cherry-pick --continue'
   alias gcR='git reset "HEAD^"'
   alias gcr='git revert'
   alias gcS='git commit -S --verbose'
