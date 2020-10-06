@@ -22,3 +22,6 @@
 [submodule "forgit/external"]
 	path = forgit/external
 	url = https://github.com/wfxr/forgit.git
+[submodule "zsh-nvm/external"]
+	path = zsh-nvm/external
+	url = https://github.com/lukechilds/zsh-nvm.git
