@@ -244,7 +244,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gs='git stash'
   alias gsa='git stash apply'
   alias gsd='git stash show --patch --stat'
-  alias gsh='git stash push'
+  alias gspush='git stash push'
   alias gshm='git stash push -m'
   alias gsl='git stash list'
   alias gsL='git-stash-dropped'
