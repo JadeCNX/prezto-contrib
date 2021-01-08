@@ -102,7 +102,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gfa='git fetch --all'
   alias gfc='git clone'
   alias gfcr='git clone --recurse-submodules'
-  alias gfm='git pull && git fat pull'
+  alias gfm='git pull && [ -d $(git rev-parse --show-toplevel)/.git/fat ] && git fat pull'
   alias gfr='git pull --rebase --autostash'
 
   # Flow (F)
@@ -213,7 +213,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gmt='git mergetool'
 
   # Push (p)
-  alias gp='git push && git fat push'
+  alias gp='git push && [ -d $(git rev-parse --show-toplevel)/.git/fat ] && git fat push'
   alias gpa='git push --all'
   alias gpA='git push --autostash && git push --tags'
   alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
