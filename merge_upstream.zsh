@@ -1,1 +1,1 @@
-git pull https://github.com/sorin-ionescu/prezto.git
+git pull https://github.com/belak/prezto-contrib.git
